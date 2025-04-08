@@ -54,6 +54,10 @@ app.post("/sendNotification", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Hoş geldiniz! Bildirim sunucusu çalışıyor.");
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`🚀 Bildirim sunucusu çalışıyor: http://localhost:${PORT}`);
