@@ -1,0 +1,10 @@
+{
+    "projects": {},
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/backend/server.js"
+      }
+    ]
+  }
+  
